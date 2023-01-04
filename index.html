@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Js Project </title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                outline: none;
+            }
+            .main_box{
+                width: 350px;
+                height: 500px;
+                background: gold;
+                margin: auto;
+            }
+            
+            .main_box h2{
+                font-size: 25px;
+                text-align: center;
+                color: #000;
+            }
+            
+            .input_box{
+                padding: 10px;
+                
+            }
+            
+            .input_box input{
+                padding: 10px;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                width: 100%;
+            }
+            
+            #name_show{
+                text-align: center;
+                font-size: 20px;
+            }
+            
+            #email_show{
+                text-align: center;
+                font-size: 20px;
+            }
+            
+            #number_show{
+                text-align: center;
+                font-size: 20px;
+            }
+            
+            
+        </style>
+    </head>
+    
+    <body>
+        
+        <div class="main_box">
+            <h2>Form</h2>
+            <div class="input_box"> 
+                
+                <input type="text" name="" id="name" placeholder="Name">
+                <br>
+                <input type="email" name="" id="email" placeholder="Email">
+                <br>
+                <input type="number" name="" id="phone" placeholder="Phon Number">
+                
+                
+                <br>
+                <br>
+                <input type = "button" value ="submit" onclick="want_value()">
+            </div>
+         
+                <div id="name_show"></div>
+                <div id="email_show"></div>
+                <div id="number_show"></div>
+            </div>
+        <script>
+            function want_value(){
+                let name1 = document.getElementById("name").value;
+                document.getElementById("name_show").innerHTML = name1;
+                
+                let mail = document.getElementById("email").value;
+                document.getElementById("email_show").innerHTML = mail;
+                
+                let phone = document.getElementById("phone").value;
+                document.getElementById("number_show").innerHTML = phone;
+            }
+            
+        </script>
+        
+        
+    </body>
+</html>
